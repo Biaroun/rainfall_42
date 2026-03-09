@@ -12,21 +12,19 @@ void m(void)
 
 int main(int argc,char **argv)
 {
-  char *s1;
-  char *s2;
-  FILE *fs;
+  char *a;
+  char *b;
+  FILE *f;
 
-  s1 = (char *)malloc(8);
-  *s1 = 1;
+  a = (char *)malloc(8);
+  *a = 1;
+  b = (char *)malloc(8);
+  *b = 2;
 
-  s2 = (char *)malloc(8);
-  *s2 = 2;
-
-  strcpy(s1[1], argv[1]);
-  strcpy(s2[1], argv[2]);
-
-  fs = fopen("/home/user/level8/.pass","r");
-  fgets(pass, 68, fs);
+  strcpy(a[1], argv[1]);
+  strcpy(b);
+  f = fopen("/home/user/level8/.pass","r");
+  fgets(pass, 68, f);
   puts("~~");
   return 0;
 }
