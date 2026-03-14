@@ -1,4 +1,4 @@
-## Level1
+## Level 1
 
 ### Analyse
 L'analyse du binaire via GDB révèle une faille de type Buffer Overflow dans la fonction main. Le programme réserve un buffer de 80 octets (sub esp, 0x50) et utilise la fonction non sécurisée gets, qui ne vérifie pas la taille de l'entrée. En listant les fonctions, on découvre une fonction run située à l'adresse 0x08048444 qui n'est jamais appelée. Le désassemblage de run montre qu'elle appelle system("/bin/sh"), ce qui permet d'obtenir un shell avec des privilèges élevés.

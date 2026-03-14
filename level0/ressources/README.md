@@ -1,4 +1,4 @@
-## Level 
+## Level 0
 
 ### Analyse
 L'analyse du binaire via GDB nous a permis de comprendre la logique du programme. 
