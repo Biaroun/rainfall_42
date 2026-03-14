@@ -1,7 +1,7 @@
 ## Bonus0
 
 ### Analyse
-main alloue un buffer de 42 bytes (esp+0x16) et appelle pp, puis puts sur le résultat.
+Le main alloue un buffer de 42 bytes (esp+0x16) et appelle pp, puis puts sur le résultat.
 
 ```bash
 (gdb) disas main
